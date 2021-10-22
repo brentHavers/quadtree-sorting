@@ -1,5 +1,8 @@
 class QuadTree:
-    def __init__(self):
+    def __init__(self, width: int, height: int):
+        self.width = width
+        self.height = height
+
         self.top_left = QuadTree()
         self.top_right = QuadTree()
         self.bottom_left = QuadTree()
