@@ -1,9 +1,8 @@
 import rectangle
 
 class QuadTree:
-    def __init__(self, width: int, height: int, node_capacity: int = 4):
-        self.width = width
-        self.height = height
+    def __init__(self, boundary: rectangle, node_capacity: int = 4):
+        self.boundary = boundary
         self.node_capacity = node_capacity
 
         self.items: rectangle = []
