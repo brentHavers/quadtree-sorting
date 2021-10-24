@@ -16,3 +16,8 @@ class QuadTree:
         self.top_right = QuadTree()
         self.bottom_left = QuadTree()
         self.bottom_right = QuadTree()
+
+    def display_debug_details(self):
+        print (self.boundary)
+        print (self.node_capacity)
+        print (self.items)

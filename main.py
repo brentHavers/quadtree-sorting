@@ -1,6 +1,10 @@
 import sys
+from quadtree import QuadTree
+from rectangle import Rectangle
 
-def sort_quadtree():
-    print('Work in progress')
+def populate_quadtree():
+    boundary = Rectangle(0, 0, 100, 100)
+    qt = QuadTree(boundary, 4)
+    qt.display_debug_details()
 
-sort_quadtree()
+populate_quadtree()
