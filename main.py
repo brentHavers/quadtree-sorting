@@ -14,4 +14,4 @@ def test_rectangle_intersection():
     intersect = rect1.intersects(rect2)
     print (f'Do these rectangles intersect? {intersect}')
 
-test_rectangle_intersection()
+populate_quadtree()
