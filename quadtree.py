@@ -1,11 +1,11 @@
-import rectangle
+from rectangle import Rectangle
 
 class QuadTree:
-    def __init__(self, boundary: rectangle, node_capacity: int = 4):
+    def __init__(self, boundary: Rectangle, node_capacity: int = 4):
         self.boundary = boundary
         self.node_capacity = node_capacity
 
-        self.items: rectangle = []
+        self.items: Rectangle = []
 
     def insert_rectangle(self, rectangle):
         if len(self.items) < self.node_capacity:
