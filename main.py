@@ -5,7 +5,7 @@ from rectangle import Rectangle
 def populate_quadtree():
     boundary = Rectangle(0, 0, 100, 100)
     qt = QuadTree(boundary, 4)
-    qt.display_debug_details()
+    print(qt)
 
 def test_rectangle_intersection():
     rect1 = Rectangle(0, 0, 10, 10)
