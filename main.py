@@ -10,7 +10,7 @@ def populate_quadtree():
     rect2 = Rectangle(1, 5, 1, 1)
     rect3 = Rectangle(5, 1, 1, 1)
     rect4 = Rectangle(25, 25, 1, 1)
-    rect5 = Rectangle(50, 25, 1, 1)
+    rect5 = Rectangle(60, 25, 1, 1)
     
     qt.insert_rectangle(rect1)
     qt.insert_rectangle(rect2)
