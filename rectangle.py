@@ -21,4 +21,7 @@ class Rectangle:
         (self.top > other.bottom()))
 
     def __str__(self):
-        return f'top: {self.top} left: {self.left} bottom: {self.bottom()} right: {self.right()}'
+        return f'\ntop: {self.top} left: {self.left} bottom: {self.bottom()} right: {self.right()}'
+
+    def __repr__(self):
+        return self.__str__()
