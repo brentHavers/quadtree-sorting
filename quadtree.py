@@ -15,7 +15,6 @@ class QuadTree:
 
     def insert_rectangle(self, rectangle):
         if not(rectangle.intersects(self.boundary)):
-            print('Returning false!')
             return False
 
         if (len(self.items) < self.node_capacity) and (not(self.is_subdivided())):
@@ -24,7 +23,9 @@ class QuadTree:
 
         if not(self.is_subdivided()):
             self.subdivide()
-            # TODO: move self.items to children
+
+            [self.insert_rectangle(rect) for rect in self.items]
+            self.items = None
 
         if (self.top_left.insert_rectangle(rectangle)):
             return True

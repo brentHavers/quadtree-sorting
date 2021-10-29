@@ -19,7 +19,6 @@ def populate_quadtree():
     qt.insert_rectangle(rect5)
 
     # for debugging
-    print(qt)
     print(f'\n{qt.top_left}')
     print(f'\n{qt.top_right}')
     print(f'\n{qt.bottom_left}')
