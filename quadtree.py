@@ -15,7 +15,6 @@ class QuadTree:
 
     def insert_rectangle(self, rectangle):
         if not(rectangle.intersects(self.boundary)):
-            print('Returning false!')
             return False
 
         if (len(self.items) < self.node_capacity) and (not(self.is_subdivided())):
