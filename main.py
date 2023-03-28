@@ -1,4 +1,3 @@
-import sys
 from quadtree import QuadTree
 from rectangle import Rectangle
 
